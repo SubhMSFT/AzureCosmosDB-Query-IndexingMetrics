@@ -116,4 +116,37 @@ In the below code, you need to enable indexing metrics for a specific query by s
 Check the output as exhibited below.
 ![Image4](image/image4.jpg)
 
+The output is divided into 4 key sections:
+1) Utilized Single Indexes
+2) Potential Single Indexes
+3) Utilized Composite Indexes
+4) Potential Composite Indexes
+
+The index **impact score** is the likelihood that an indexed path, based on the query shape, has a significant impact on query performance. In other words, the index impact score is the probability that, without that specific indexed path, the query RU charge would have been substantially higher. There are two possible index impact scores: high and low. If you have multiple potential indexed paths, we recommend focusing on indexed paths with a high impact score.
+
+```
+Index Spec: /foodGroup/?
+Index Impact Score: High
+```
+means, /foodGroup which is the partitionKey for the container and part of the query, and indexing policy is important for the correct working of the query. In other words, the index impact score is the probability that, without that specific indexed path, the query RU charge would have been substantially higher.
+
+```
+Index Spec: /manufacturerName/?
+Index Impact Score: Low
+```
+means, /manufacturerName though is part of the query, but has a low impact on the overall indexing both in terms of performance & query RU charge.
+
+```
+Index Spec: /description/?
+Index Impact Score: Low
+```
+means, /description which is a potential Single Index, but has low impact on the overall scheme of things.
+```
+Index Spec: /tags/name ASC, /version ASC
+Index Impact Score: High
+```
+means, /tags/name ASC, /version ASC which form our Utilized Composite Indexes are key for high performance and lowering overall RU cost.
+
+
+
 
