@@ -12,7 +12,9 @@ This document provides guidance on getting your hands dirty using Azure Cosmos D
 
 [Points to Note](#points-to-note)
 
-[How to Enable Indexing Metrics](#enabling-indexing-metrics)
+[How to Enable Indexing Metrics](#how-to-enable-indexing-metrics)
+
+[An Example in .NET SDK](#an-example-in-net-sdk)
 
 [Feedback](#feedback)
 
