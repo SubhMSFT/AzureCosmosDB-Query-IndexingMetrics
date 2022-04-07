@@ -33,5 +33,5 @@ You can enable indexing metrics for a query by setting the PopulateIndexMetrics 
 ## An Example in .NET SDK
 I have an Azure Cosmos DB database named 'NutritionDatabase' and container named 'FoodCollection'.
 You can see a sample schema of the items in the container.
-![Image1](images/image1.jpg)
+![Image1](image/image1.jpg)
 
