@@ -152,10 +152,10 @@ means, /tags/name ASC, /version ASC which form our Utilized Composite Indexes ar
 By carefully analyzing your specific use-case query patterns and the Utilized and Potential Impact Scores, you can decide which Indexes are needed, or could be dropped without any major impact on your database Query Performance.
 
 For further study on Indexing in Azure Cosmos DB, here's some good links:
-1. Indexing policies in Azure Cosmos DB[https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy]
-2. Manage indexing policies in Azure Cosmos DB[https://docs.microsoft.com/en-us/azure/cosmos-db/sql/how-to-manage-indexing-policy?tabs=dotnetv2%2Cpythonv3]
-3. Indexing metrics in Azure Cosmos DB[https://docs.microsoft.com/en-us/azure/cosmos-db/sql/index-metrics]
-4. Optimize query performance with Azure Cosmos DB indexing metrics[https://devblogs.microsoft.com/cosmosdb/query-performance-indexing-metrics/]
+1. [Indexing policies in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy)
+2. [Manage indexing policies in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/how-to-manage-indexing-policy?tabs=dotnetv2%2Cpythonv3)
+3. [Indexing metrics in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/index-metrics)
+4. [Optimize query performance with Azure Cosmos DB indexing metrics](https://devblogs.microsoft.com/cosmosdb/query-performance-indexing-metrics/)
 
 ## Feedback
 You can share any feedback at: sugh AT microsoft dot com
@@ -168,6 +168,3 @@ Anyone is free to use or distribute this white paper, for any purpose, commercia
 THE WHITE PAPER IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE WHITE PAPER.
-
-
-
