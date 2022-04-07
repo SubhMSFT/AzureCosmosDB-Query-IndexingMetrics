@@ -88,3 +88,5 @@ Hence, I go and change the Indexing Policy accordingly.
     ]
 }
 ```
+From the Azure portal, we get an output similar to as exhibited below.
+![Image3](image/image3.jpg)
