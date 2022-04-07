@@ -8,8 +8,8 @@ using Microsoft.Azure.Cosmos;
 
 public class Program
 {
-    private static readonly string _endpointUri = "https://netsdkcoresql2021.documents.azure.com:443/";
-    private static readonly string _primaryKey = "R69RuwXTv7j2y7ZPf6UgHqnDDwjdxges01I6NTxtnDyh1ZmlYqCqFWHVTN7Grksu5RQUDE3Wttf3qk7XwRHyyg==";
+    private static readonly string _endpointUri = "<<< ENTER URI FROM AZURE PORTAL FOR YOUR AZURE COSMOS DB ACCOUNT >>>";
+    private static readonly string _primaryKey = "<<< ENTER PRIMARY KEY FROM AZURE PORTAL FOR YOUR AZURE COSMOS DB ACCOUNT >>>";
     private static readonly string _databaseId = "NutritionDatabase";
     private static readonly string _containerId = "FoodCollection";
 
