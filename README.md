@@ -90,3 +90,24 @@ Hence, I go and change the Indexing Policy accordingly.
 ```
 From the Azure portal, we get an output similar to as exhibited below.
 ![Image3](image/image3.jpg)
+
+As a next step, we can leverage eithe the .NET or Java SDK to understand the both the utilized indexed paths and recommended indexed paths.
+
+```
+    // In-partition Query: Complex
+        string sqlQueryText = "SELECT * FROM c WHERE c.foodGroup = 'Baby Foods' and IS_DEFINED(c.description) and IS_DEFINED(c.manufacturerName) ORDER BY c.tags.name ASC, c.version ASC";
+        QueryDefinition query = new QueryDefinition(sqlQueryText);
+        FeedIterator<Food> resultSetIterator = container.GetItemQueryIterator<Food>(query, requestOptions: new QueryRequestOptions { PopulateIndexMetrics = true });
+        FeedResponse<Food> response = null;
+        while (resultSetIterator.HasMoreResults)
+        {
+            response = await resultSetIterator.ReadNextAsync();
+            Console.WriteLine(response.IndexMetrics);
+        }
+
+        FeedResponse<Food> queryResponse3 = await resultSetIterator.ReadNextAsync();
+        await Console.Out.WriteLineAsync($"Query is: {sqlQueryText}");
+        await Console.Out.WriteLineAsync($"{response.RequestCharge} RUs");
+        Console.Out.WriteLine();
+```
+
