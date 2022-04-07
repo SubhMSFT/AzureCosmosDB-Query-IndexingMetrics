@@ -47,7 +47,7 @@ I need to execute the following query:
 SELECT * FROM c WHERE c.foodGroup = 'Baby Foods' and IS_DEFINED(c.description) and IS_DEFINED(c.manufacturerName) ORDER BY c.tags.name ASC, c.version ASC
 ```
 
-Since I need to execute an ORDER BY query, we need to creat a Composite Index directly in the Azure por
+Since I need to execute an ORDER BY query, we need to create a Composite Index directly in the Azure portal.
 Hence, I go and change the Indexing Policy accordingly.
 
 ```
