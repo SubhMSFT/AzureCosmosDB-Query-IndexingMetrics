@@ -151,6 +151,10 @@ means, /tags/name ASC, /version ASC which form our Utilized Composite Indexes ar
 
 By carefully analyzing your specific use-case query patterns and the Utilized and Potential Impact Scores, you can decide which Indexes are needed, or could be dropped without any major impact on your database Query Performance.
 
+> **⚠ WARNING: Aliens are coming.**  
+> No aliens are not coming, but since activating Indexing Metrics do incur an Overhead, the recommendation is not to activate it for every Production Query.
+> You should only activate Indexing Metrics for queries which you feel are slow performing, and needs Optimization or Fine-Tuning.
+
 For further study on Indexing in Azure Cosmos DB, here's some good links:
 1. [Indexing policies in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy)
 2. [Manage indexing policies in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/how-to-manage-indexing-policy?tabs=dotnetv2%2Cpythonv3)
