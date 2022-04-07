@@ -149,6 +149,17 @@ Index Impact Score: High
 ```
 means, /tags/name ASC, /version ASC which form our Utilized Composite Indexes are key for high performance and lowering overall RU cost.
 
+## Feedback
+You can share any feedback at: sugh AT microsoft dot com
+
+## License & Terms of Use
+
+This is a free white paper released into the public domain.
+Anyone is free to use or distribute this white paper, for any purpose, commercial or non-commercial, and by any means.
+
+THE WHITE PAPER IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE WHITE PAPER.
 
 
 
