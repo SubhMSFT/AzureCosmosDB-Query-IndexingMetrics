@@ -113,4 +113,7 @@ In the below code, you need to enable indexing metrics for a specific query by s
         await Console.Out.WriteLineAsync($"{response.RequestCharge} RUs");
         Console.Out.WriteLine();
 ```
-Check the 
+Check the output as exhibited below.
+![Image4](image/image4.jpg)
+
+
