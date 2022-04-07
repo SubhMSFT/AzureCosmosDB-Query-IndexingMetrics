@@ -149,6 +149,14 @@ Index Impact Score: High
 ```
 means, /tags/name ASC, /version ASC which form our Utilized Composite Indexes are key for high performance and lowering overall RU cost.
 
+By carefully analyzing your specific use-case query patterns and the Utilized and Potential Impact Scores, you can decide which Indexes are needed, or could be dropped without any major impact on your database Query Performance.
+
+For further study on Indexing in Azure Cosmos DB, here's some good links:
+1. Indexing policies in Azure Cosmos DB[https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy]
+2. Manage indexing policies in Azure Cosmos DB[https://docs.microsoft.com/en-us/azure/cosmos-db/sql/how-to-manage-indexing-policy?tabs=dotnetv2%2Cpythonv3]
+3. Indexing metrics in Azure Cosmos DB[https://docs.microsoft.com/en-us/azure/cosmos-db/sql/index-metrics]
+4. Optimize query performance with Azure Cosmos DB indexing metrics[https://devblogs.microsoft.com/cosmosdb/query-performance-indexing-metrics/]
+
 ## Feedback
 You can share any feedback at: sugh AT microsoft dot com
 
