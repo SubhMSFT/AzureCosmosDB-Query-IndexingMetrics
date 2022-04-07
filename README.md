@@ -33,5 +33,11 @@ You can enable indexing metrics for a query by setting the PopulateIndexMetrics 
 ## An Example in .NET SDK
 I have an Azure Cosmos DB database named 'NutritionDatabase' and container named 'FoodCollection'.
 You can see a sample schema of the items in the container.
+
 ![Image1](image/image1.jpg)
+
+The default Indexing Policy set at the container level is exhibited below.
+
+![Image2](image/image2.jpg)
+
 
