@@ -4,7 +4,7 @@ How to do an Effective Study of Indexing Metrics for a Query in Azure Cosmos DB 
 **Summary:**
 This document provides guidance on getting your hands dirty using Azure Cosmos DB Core (SQL) API .NET SDK
 
-![Image0](images/header.png)
+![Image0](image/image0.jpg)
 
 # Contents
 
