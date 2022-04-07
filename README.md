@@ -41,5 +41,6 @@ The default Indexing Policy set at the container level is exhibited below.
 ![Image2](image/image2.jpg)
 
 I need to execute the following query:
-```SELECT * FROM c WHERE c.foodGroup = 'Baby Foods' and IS_DEFINED(c.description) and IS_DEFINED(c.manufactureName) ORDER BY c.tags.name ASC, c.version ASC
+```
+SELECT * FROM c WHERE c.foodGroup = 'Baby Foods' and IS_DEFINED(c.description) and IS_DEFINED(c.manufacturerName) ORDER BY c.tags.name ASC, c.version ASC
 ```
