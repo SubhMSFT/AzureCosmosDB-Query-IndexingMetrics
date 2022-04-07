@@ -45,7 +45,7 @@ I need to execute the following query:
 SELECT * FROM c WHERE c.foodGroup = 'Baby Foods' and IS_DEFINED(c.description) and IS_DEFINED(c.manufacturerName) ORDER BY c.tags.name ASC, c.version ASC
 ```
 
-Since I need to execute an ORDER BY query, we need to creat a Composite Index. 
+Since I need to execute an ORDER BY query, we need to creat a Composite Index directly in the Azure por
 Hence, I go and change the Indexing Policy accordingly.
 
 ```
@@ -91,7 +91,10 @@ Hence, I go and change the Indexing Policy accordingly.
 From the Azure portal, we get an output similar to as exhibited below.
 ![Image3](image/image3.jpg)
 
-As a next step, we can leverage eithe the .NET or Java SDK to understand the both the utilized indexed paths and recommended indexed paths.
+As a next step, we can leverage either the .NET or Java SDK to understand the both the utilized indexed paths and recommended indexed paths.
+
+E.g., I am using the .NET SDK ver 3.26.1.
+In the below code, you need to enable indexing metrics for a specific query by setting the **PopulateIndexMetrics** property to true.
 
 ```
     // In-partition Query: Complex
@@ -110,4 +113,4 @@ As a next step, we can leverage eithe the .NET or Java SDK to understand the bot
         await Console.Out.WriteLineAsync($"{response.RequestCharge} RUs");
         Console.Out.WriteLine();
 ```
-
+Check the 
